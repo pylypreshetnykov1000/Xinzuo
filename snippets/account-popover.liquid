@@ -9,7 +9,7 @@
   data-close-on-resize="true"
   class="account-popover mobile:hidden"
 >
-  {% render 'account-button' with 'account-popover' as popover_id %}
+  {% comment %} {% render 'account-button' with 'account-popover' as popover_id %}
   <div
     class="account-popover__panel details-content color-{{ settings.popover_color_scheme }}"
     id="account-popover"
@@ -18,7 +18,7 @@
   >
     {% render 'account-actions' %}
   </div>
-</anchored-popover-component>
+</anchored-popover-component> {% endcomment %}
 
 {% stylesheet %}
   .account-popover {
